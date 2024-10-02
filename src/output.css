@@ -560,8 +560,8 @@ video {
   position: absolute;
 }
 
-.-bottom-16{
-  bottom: -4rem;
+.bottom-0{
+  bottom: 0px;
 }
 
 .left-0{
@@ -581,11 +581,6 @@ video {
   margin-right: auto;
 }
 
-.my-10{
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-}
-
 .my-20{
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -597,10 +592,6 @@ video {
 
 .flex{
   display: flex;
-}
-
-.aspect-square{
-  aspect-ratio: 1 / 1;
 }
 
 .min-h-screen{
@@ -627,6 +618,10 @@ video {
   justify-content: center;
 }
 
+.gap-20{
+  gap: 5rem;
+}
+
 .gap-4{
   gap: 1rem;
 }
@@ -635,16 +630,13 @@ video {
   gap: 1.5rem;
 }
 
-.gap-10{
-  gap: 2.5rem;
-}
-
-.gap-20{
-  gap: 5rem;
-}
-
 .overflow-hidden{
   overflow: hidden;
+}
+
+.px-32{
+  padding-left: 8rem;
+  padding-right: 8rem;
 }
 
 .px-4{
@@ -652,19 +644,9 @@ video {
   padding-right: 1rem;
 }
 
-.py-10{
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.px-32{
-  padding-left: 8rem;
-  padding-right: 8rem;
 }
 
 .text-center{
@@ -720,6 +702,10 @@ body {
 }
 
 @media (min-width: 768px){
+  .md\:-bottom-16{
+    bottom: -4rem;
+  }
+
   .md\:w-\[1091px\]{
     width: 1091px;
   }
@@ -746,6 +732,11 @@ body {
     line-height: 2rem;
   }
 
+  .md\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .md\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -768,11 +759,6 @@ body {
   .md\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .md\:text-3xl{
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 }
 
