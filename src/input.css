@@ -6,3 +6,25 @@
 body {
     font-family: "Poppins", sans-serif;
 }
+
+.landing {
+    width: 100%;
+    position: relative;
+    background-image: url(../images/landing.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.landing::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, #C40B13, #B0001F, #C66800);
+    opacity: 0.5;
+    z-index: -1;
+}
+
+
+
