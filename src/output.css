@@ -560,12 +560,8 @@ video {
   position: absolute;
 }
 
-.inset-0{
-  inset: 0px;
-}
-
-.bottom-0{
-  bottom: 0px;
+.-bottom-16{
+  bottom: -4rem;
 }
 
 .left-0{
@@ -574,30 +570,6 @@ video {
 
 .right-0{
   right: 0px;
-}
-
-.top-0{
-  top: 0px;
-}
-
-.bottom-10{
-  bottom: 2.5rem;
-}
-
-.-bottom-10{
-  bottom: -2.5rem;
-}
-
-.-bottom-20{
-  bottom: -5rem;
-}
-
-.-bottom-16{
-  bottom: -4rem;
-}
-
-.-z-10{
-  z-index: -10;
 }
 
 .z-10{
@@ -609,18 +581,26 @@ video {
   margin-right: auto;
 }
 
-.my-20{
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
-
 .my-10{
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
 }
 
+.my-20{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+
 .flex{
   display: flex;
+}
+
+.aspect-square{
+  aspect-ratio: 1 / 1;
 }
 
 .min-h-screen{
@@ -633,14 +613,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-\[\]{
-  width: ;
-}
-
-.w-\[932px\]{
-  width: 932px;
 }
 
 .flex-col{
@@ -659,28 +631,25 @@ video {
   gap: 1rem;
 }
 
+.gap-6{
+  gap: 1.5rem;
+}
+
+.gap-10{
+  gap: 2.5rem;
+}
+
+.gap-20{
+  gap: 5rem;
+}
+
 .overflow-hidden{
   overflow: hidden;
 }
 
-.py-2{
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.py-20{
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-.py-6{
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
-.py-16{
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .py-10{
@@ -688,9 +657,14 @@ video {
   padding-bottom: 2.5rem;
 }
 
-.px-4{
-  padding-left: 1rem;
-  padding-right: 1rem;
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.px-32{
+  padding-left: 8rem;
+  padding-right: 8rem;
 }
 
 .text-center{
@@ -750,6 +724,10 @@ body {
     width: 1091px;
   }
 
+  .md\:w-\[1108px\]{
+    width: 1108px;
+  }
+
   .md\:w-\[708px\]{
     width: 708px;
   }
@@ -758,25 +736,24 @@ body {
     width: 932px;
   }
 
-  .md\:w-\[11\]{
-    width: 11;
+  .md\:py-10{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 
-  .md\:w-\[1180px\]{
-    width: 1180px;
-  }
-
-  .md\:w-\[1108px\]{
-    width: 1108px;
-  }
-
-  .md\:w-\[11px\]{
-    width: 11px;
+  .md\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .md\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .md\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
   }
 
   .md\:text-\[83px\]{
@@ -793,19 +770,9 @@ body {
     line-height: 1.75rem;
   }
 
-  .md\:text-6xl{
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-
   .md\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
-  }
-
-  .md\:text-2xl{
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 }
 
